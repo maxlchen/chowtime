@@ -1,1 +1,0 @@
-<?php exec('python chooserestaurant.py', $output, $return); ?>
