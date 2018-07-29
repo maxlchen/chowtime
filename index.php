@@ -3,6 +3,7 @@
 <style>
 body{
 	background-color: mintcream;
+	font-family: Helvetica;
 }
 #intro{
 	background-color: mintcream;
@@ -38,7 +39,9 @@ body{
 	
 	<form action = "script.php" method = "get">
 		<input type="hidden" name = "submitted">
-		<input type="hidden" name="location" id = "location" value="Hicksville" >
+		Location:
+		<input type="text" name="location" id = "location" value="New York" >
+		<br>
 		<button type = "submit">Chowtime!</button>
 	</form>
 </p>
