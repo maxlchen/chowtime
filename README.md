@@ -6,9 +6,13 @@ Chowtime is an in-progress application designed to help indecisive people decide
 **To-Do List:**
 
 1. UI
-2. Geolocation
+2. <del>Geolocation</del>
 3. Filters (Types of cuisine, Price, Rating, Distance)
 4. ML
+
+*July 29, 2018*
+
+The Python script has been successfully integrated into the web through the usage of PHP and JavaScript. Geolocation functionality has been added. Basic CSS styling has been added to the web page, with hopefully more to come.
 
 *July 7, 2018*
 

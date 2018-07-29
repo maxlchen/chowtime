@@ -5,5 +5,5 @@ api = get_key.get_key
 
 yelp_api = YelpAPI(api)
 
-def getResults():
-    return yelp_api.search_query(term = "food", location = 'Syosset', limit = 50)
+def getResults(location):
+    return yelp_api.search_query(term = "food", location = location, limit = 50)

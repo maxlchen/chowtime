@@ -1,0 +1,31 @@
+<?php
+if($_POST["submitted"])
+{
+
+
+$command = escapeshellcmd('chooserestaurant.py');
+$output = shell_exec($command);
+echo $output;
+
+}
+?>
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Chowtime</title>
+</head>
+
+<center>
+
+<font color = "black"><h1>Chowtime</h1>
+
+
+<body>
+	<form method = "post">
+		<input type="hidden" name = "submitted">
+		<button type = "submit">Run the script!</button>
+	</form>
+</body>
+
+</html>
