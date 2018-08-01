@@ -1,7 +1,7 @@
 ## Chowtime
 
-Chowtime is an in-progress application designed to help indecisive people decide where to eat.
-The script is currently accessible through <a href = "http://www.zemcw.stream/chowtime">zemcw.stream/chowtime</a>.
+Chowtime is an in-progress application designed to help aspiring foodies decide where to eat.
+The script is currently accessible through <a href = "http://www.zemcw.stream/chowtime">maxchen.us/chowtime</a>.
 
 **To-Do List:**
 
