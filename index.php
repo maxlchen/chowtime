@@ -1,23 +1,6 @@
 <!DOCTYPE html>
 <html lang = "en">
-<<<<<<< HEAD
 
-=======
-<style>
-body{
-	background-color: mintcream;
-	font-family: Helvetica;
-}
-#intro{
-	background-color: mintcream;
-	font-family: Georgia;
-	font-size: 20px;
-}
-#test{
-	background-color: silver;
-}
-</style>
->>>>>>> 91c0e29fca9b856d78261445cc99307328af209a
 <div id = "header">
 <head>
 
@@ -61,7 +44,7 @@ body{
 	<form action = "script.php" method = "get">
 		<input type="hidden" name = "submitted">
 		Location:
-<<<<<<< HEAD
+
 		<input type="text" name="location" id = "location" value="Wait for location or change to your choice" >
 		<br>
 		Maximum Distance:<br>1mi<input type="range" name="distance" id = "distance" min="1" max="25">25mi
@@ -88,10 +71,10 @@ body{
 		<br>
 		Price Range:
 		<input type="radio" name ="price" id = "price" value = "0" checked>Any <input type="radio" name ="price" id = "price" value = "1" >$ <input type="radio" name ="price" id = "price" value = "2" >$$ <input type="radio" name ="price" id = "price" value = "3" >$$$ <input type="radio" name ="price" id = "price" value = "4" >$$$$  <br>
-=======
+
 		<input type="text" name="location" id = "location" value="New York" >
 		<br>
->>>>>>> 91c0e29fca9b856d78261445cc99307328af209a
+
 		<button type = "submit">Chowtime!</button>
 	</form>
 </p>
