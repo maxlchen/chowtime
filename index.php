@@ -71,9 +71,7 @@
 		<br>
 		Price Range:
 		<input type="radio" name ="price" id = "price" value = "0" checked>Any <input type="radio" name ="price" id = "price" value = "1" >$ <input type="radio" name ="price" id = "price" value = "2" >$$ <input type="radio" name ="price" id = "price" value = "3" >$$$ <input type="radio" name ="price" id = "price" value = "4" >$$$$  <br>
-
-		<input type="text" name="location" id = "location" value="New York" >
-		<br>
+		
 
 		<button type = "submit">Chowtime!</button>
 	</form>
