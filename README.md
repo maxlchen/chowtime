@@ -1,14 +1,19 @@
 ## Chowtime
 
 Chowtime is an in-progress application designed to help aspiring foodies decide where to eat.
-The script is currently accessible through <a href = "http://www.maxchen.us/chowtime">maxchen.us/chowtime</a>.
+The script is currently accessible through <a href = "http://intellegostudio.com/chowtime">intellegostudio.com/chowtime</a>.
 
 **To-Do List:**
 
-1. UI
+1. UI: in-progress
 2. <del>Geolocation</del>
-3. Filters (Types of cuisine, Price, Rating, Distance)
+3. Filters (Types of cuisine, Price, Rating, Distance): in-progress
 4. ML
+5. Add retrieval of restaurant information
+
+
+*August 3, 2018*
+<i>Some</i> important filters have been added. Different CSS and HTML inputs were added, including range bars for distance, as well as a handful of food categories. CSS was added, as well as a navigation bar that will link the user back to the Chowtime homepage.
 
 *July 29, 2018*
 

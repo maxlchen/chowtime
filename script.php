@@ -48,12 +48,16 @@ echo "</pre>";
 </head>
 
 <body>
-<div id = "restaurant">
+<br>
+<div id = "intro">
 
 <center><script type="text/javascript">
 // Turning Python output into JavaScript String
 var output = "<?php echo $output ?>"; 
-document.getElementById("restaurant").innerHTML = output;
+document.getElementById("intro").innerHTML = output;
+document.getElementById("intro").style.fontSize = "x-large";
+document.getElementById("intro").style.alignContent = "center";
+
 </script></center>
 
 </div>
