@@ -1,5 +1,3 @@
-
-
 <?php
 //your code here
 /*
@@ -8,16 +6,21 @@ to close PHP, output and re-open (?>HTML<?php), but it is up to you
 */
 //more code here
 $area = $_GET["location"];
+$area = str_replace(' ', '', $area);;
 $cost = $_GET["price"];
 $type = $_GET["cuisine"];
 $radius = $_GET["distance"];
 //$command = escapeshellcmd('chooserestaurant.py .$input');
 //$output = shell_exec($command);
 //Make this python3 on server, python on regular computer
-$output = exec("python chooserestaurant.py $area $cost $type $radius");
+$output = exec("python3 chooserestaurant.py $area $cost $type $radius");
 echo "<pre>";
 //print_r($output);
 echo "</pre>";
+if (ctype_space($output) || $str == '') {
+	$output = exec("python3 chooserestaurant.py $area $cost $type $radius");
+
+}
 
 ?>
 
@@ -59,6 +62,12 @@ document.getElementById("intro").style.fontSize = "x-large";
 document.getElementById("intro").style.alignContent = "center";
 
 </script></center>
+
+</div>
+<div id = "sec1">
+	<script type="text/javascript">
+
+	</script>
 
 </div>
 

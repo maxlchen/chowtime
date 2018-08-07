@@ -43,7 +43,7 @@
 	
 	<form action = "script.php" method = "get">
 		<input type="hidden" name = "submitted">
-		Location:
+		City or Zip Code:
 
 		<input type="text" name="location" id = "location" value="Wait for location or change to your choice" >
 		<br>
