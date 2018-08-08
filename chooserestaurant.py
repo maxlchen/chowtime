@@ -15,6 +15,7 @@ else:
 def chooseRestaurant():
 	restaurant = search_results['businesses'][random.randint(0,len(search_results['businesses']) - 1)]
 	print(restaurant['name'])#, restaurant['id'])
-	#print(restaurant['id'])
+	print(restaurant['id'])
+	print(restaurant['location']['address1'] + ", " + restaurant['location']['city'] + ", " + restaurant['location']['zip_code'])
 
 chooseRestaurant()

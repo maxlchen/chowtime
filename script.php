@@ -20,10 +20,19 @@ echo "<pre>";
 //print_r($output);
 echo "</pre>";
 //if (ctype_space($output) || $str == '') {
-$output = exec("python chooserestaurant.py $area $cost $type $radius");
+$output = shell_exec("python chooserestaurant.py $area $cost $type $radius");
+$namepos = strpos($output, "\n");
+$name = substr($output, 0, $namepos);
+$rest = substr($output, $namepos + 1);
+$idpos = strpos($rest, "\n");
+$id = substr($rest, 0, $idpos);
+$rest = substr($rest, $idpos + 1);
+$addresspos = strpos($rest, "\n");
+$address = substr($rest, 0, $addresspos);
 //echo $output;
 //}
 //printf($output)
+//echo $output;
 
 ?>
 
@@ -59,8 +68,9 @@ $output = exec("python chooserestaurant.py $area $cost $type $radius");
 
 <center><script type="text/javascript">
 // Turning Python output into JavaScript String
-var output = "<?php echo $output ?>"; 
-
+var output = "<?php echo $name?>"; 
+console.log(output);
+document.getElementById("intro").innerHTML = output;
 document.getElementById("intro").style.fontSize = "x-large";
 document.getElementById("intro").style.alignContent = "center";
 document.getElementById("intro").style.fontFamily = "Helvetica";
@@ -71,9 +81,26 @@ document.getElementById("intro").innerHTML = output;
 </div>
 <div id = "sec1">
 	<script type="text/javascript">
-
+		var output = "<?php echo $id?>"; 
+console.log(output);
+document.getElementById("sec1").innerHTML = "ID:" + output;
+document.getElementById("sec1").style.fontSize = "x-large";
+document.getElementById("sec1").style.alignContent = "center";
+document.getElementById("sec1").style.fontFamily = "Helvetica";
+document.getElementById("sec1").innerHTML = output;
 	</script>
 
+</div>
+<div id = "sec2">
+	<script type="text/javascript">
+		var output = "<?php echo $address?>"; 
+console.log(output);
+document.getElementById("sec2").innerHTML = "ID:" + output;
+document.getElementById("sec2").style.fontSize = "x-large";
+document.getElementById("sec2").style.alignContent = "center";
+document.getElementById("sec2").style.fontFamily = "Helvetica";
+document.getElementById("sec2").innerHTML = output;
+	</script>
 </div>
 
 </body>
