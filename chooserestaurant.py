@@ -13,6 +13,6 @@ else:
 	search_results = getResults(location, category, distance, price)
 
 def chooseRestaurant():
-	return search_results['businesses'][random.randint(0,len(search_results['businesses']))]['name']
+	return search_results['businesses'][random.randint(0,len(search_results['businesses']) - 1)]['name']
 
 print(chooseRestaurant())
