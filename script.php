@@ -13,14 +13,17 @@ $radius = $_GET["distance"];
 //$command = escapeshellcmd('chooserestaurant.py .$input');
 //$output = shell_exec($command);
 //Make this python3 on server, python on regular computer
-$output = exec("python3 chooserestaurant.py $area $cost $type $radius");
+//$output = passthru("python chooserestaurant.py $area $cost $type $radius");
+
+//passthru vs exe
 echo "<pre>";
 //print_r($output);
 echo "</pre>";
-if (ctype_space($output) || $str == '') {
-	$output = exec("python3 chooserestaurant.py $area $cost $type $radius");
-
-}
+//if (ctype_space($output) || $str == '') {
+$output = exec("python chooserestaurant.py $area $cost $type $radius");
+//echo $output;
+//}
+//printf($output)
 
 ?>
 
@@ -57,9 +60,11 @@ if (ctype_space($output) || $str == '') {
 <center><script type="text/javascript">
 // Turning Python output into JavaScript String
 var output = "<?php echo $output ?>"; 
-document.getElementById("intro").innerHTML = output;
+
 document.getElementById("intro").style.fontSize = "x-large";
 document.getElementById("intro").style.alignContent = "center";
+document.getElementById("intro").style.fontFamily = "Helvetica";
+document.getElementById("intro").innerHTML = output;
 
 </script></center>
 
