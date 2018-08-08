@@ -29,6 +29,10 @@ $id = substr($rest, 0, $idpos);
 $rest = substr($rest, $idpos + 1);
 $addresspos = strpos($rest, "\n");
 $address = substr($rest, 0, $addresspos);
+$rest = substr($rest, $addresspos + 1);
+$urlpos = strpos($rest, "\n");
+$url = substr($rest, 0, $urlpos);
+$rest = substr($rest, $urlpos + 1);
 //echo $output;
 //}
 //printf($output)
@@ -69,8 +73,9 @@ $address = substr($rest, 0, $addresspos);
 <center><script type="text/javascript">
 // Turning Python output into JavaScript String
 var output = "<?php echo $name?>"; 
+output = output.link("<?php echo $url?>");
 console.log(output);
-document.getElementById("intro").innerHTML = output;
+//document.getElementById("intro").innerHTML = output;
 document.getElementById("intro").style.fontSize = "x-large";
 document.getElementById("intro").style.alignContent = "center";
 document.getElementById("intro").style.fontFamily = "Helvetica";
@@ -79,15 +84,15 @@ document.getElementById("intro").innerHTML = output;
 </script></center>
 
 </div>
-<div id = "sec1">
+<div id = "sec1" style = "display:none;">
 	<script type="text/javascript">
-		var output = "<?php echo $id?>"; 
-console.log(output);
-document.getElementById("sec1").innerHTML = "ID:" + output;
-document.getElementById("sec1").style.fontSize = "x-large";
+		var output = "<?php echo $url?>"; 
+
+
+document.getElementById("sec1").style.fontSize = "medium";
 document.getElementById("sec1").style.alignContent = "center";
 document.getElementById("sec1").style.fontFamily = "Helvetica";
-document.getElementById("sec1").innerHTML = output;
+document.getElementById("sec1").innerHTML = "URL: " + output;
 	</script>
 
 </div>
