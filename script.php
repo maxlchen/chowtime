@@ -20,7 +20,7 @@ echo "<pre>";
 //print_r($output);
 echo "</pre>";
 //if (ctype_space($output) || $str == '') {
-$output = shell_exec("python chooserestaurant.py $area $cost $type $radius");
+$output = shell_exec("python3 chooserestaurant.py $area $cost $type $radius");
 $namepos = strpos($output, "\n");
 $name = substr($output, 0, $namepos);
 $rest = substr($output, $namepos + 1);
@@ -119,6 +119,6 @@ document.getElementById("sec2").style.fontFamily = "Helvetica";
 document.getElementById("sec2").innerHTML = output;
 	</script>
 </div>
-
+<center><form action="./script.php" method="get"><button type="submit" formaction="javascript:location.reload(true)">Don't like this restaurant? Choose a new one! </button></center></form>
 </body>
 </html>
