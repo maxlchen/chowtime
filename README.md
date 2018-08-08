@@ -11,6 +11,10 @@ The script is currently accessible through <a href = "http://intellegostudio.com
 4. ML
 5. Add retrieval of restaurant information
 
+*August 7, 2018*
+
+Added restaurant URL, address, images. Changed php to allow multiple lines from bash output, permitting us to do the former. Fixed a few formatting issues.
+
 *August 3, 2018*
 
 <i>Some</i> important filters have been added. Different CSS and HTML inputs were added, including range bars for distance, as well as a handful of food categories. CSS was added, as well as a navigation bar that will link the user back to the Chowtime homepage.

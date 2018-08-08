@@ -33,6 +33,9 @@ $rest = substr($rest, $addresspos + 1);
 $urlpos = strpos($rest, "\n");
 $url = substr($rest, 0, $urlpos);
 $rest = substr($rest, $urlpos + 1);
+$imgpos = strpos($rest, "\n");
+$img = substr($rest, 0, $imgpos);
+$rest = substr($rest, $imgpos + 1);
 //echo $output;
 //}
 //printf($output)
@@ -77,32 +80,41 @@ output = output.link("<?php echo $url?>");
 console.log(output);
 //document.getElementById("intro").innerHTML = output;
 document.getElementById("intro").style.fontSize = "x-large";
-document.getElementById("intro").style.alignContent = "center";
+document.getElementById("intro").style.textAlign = "center";
 document.getElementById("intro").style.fontFamily = "Helvetica";
 document.getElementById("intro").innerHTML = output;
 
 </script></center>
 
 </div>
-<div id = "sec1" style = "display:none;">
+<center><div id = "image" >
 	<script type="text/javascript">
-		var output = "<?php echo $url?>"; 
+		//var output = "<?php echo $url?>"; 
+	document.getElementById("image").style.alignText = "center";
+		document.getElementById("image").innerHTML = " ";
 
-
+/*
 document.getElementById("sec1").style.fontSize = "medium";
-document.getElementById("sec1").style.alignContent = "center";
+document.getElementById("sec1").style.textAlign = "center";
 document.getElementById("sec1").style.fontFamily = "Helvetica";
-document.getElementById("sec1").innerHTML = "URL: " + output;
+document.getElementById("sec1").innerHTML = "URL: " + output;*/
+	var img = document.createElement('img');
+	img.src = "<?php echo $img?>";
+	img.width = 100;
+	img.height = 100;
+
+document.getElementById('image').appendChild(img)
+
 	</script>
 
-</div>
+</div></center>	
 <div id = "sec2">
 	<script type="text/javascript">
 		var output = "<?php echo $address?>"; 
 console.log(output);
 document.getElementById("sec2").innerHTML = "ID:" + output;
-document.getElementById("sec2").style.fontSize = "x-large";
-document.getElementById("sec2").style.alignContent = "center";
+document.getElementById("sec2").style.fontSize = "large";
+document.getElementById("sec2").style.textAlign = "center";
 document.getElementById("sec2").style.fontFamily = "Helvetica";
 document.getElementById("sec2").innerHTML = output;
 	</script>

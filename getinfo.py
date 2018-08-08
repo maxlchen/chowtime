@@ -1,0 +1,4 @@
+from yelpapi import YelpAPI
+from chooserestaurant import restaurant
+yelp_api = YelpAPI('V4emNeDA9c8hV2hv1dRCs33iS3QmfQjlpPSvd5LQ8AInkJXwh_VXl-cWAhT6TsjdNwovdI0qvXyi5_gqv5nw4TEQRkC_ZMKHI7_YCEnlm7cnQ2KpmlMpzmOBHDNBW3Yx')
+

@@ -18,5 +18,6 @@ def chooseRestaurant():
 	print(restaurant['id'])
 	print(restaurant['location']['address1'] + ", " + restaurant['location']['city'] + ", " + restaurant['location']['zip_code'])
 	print(restaurant['url'])
+	print(restaurant['image_url'])
 
 chooseRestaurant()
