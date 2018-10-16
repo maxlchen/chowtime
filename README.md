@@ -7,7 +7,7 @@ The script is currently accessible through <a href = "http://intellegostudio.com
 
 1. UI: in-progress
 2. <del>Geolocation</del>
-3. Filters (Types of cuisine, Price, Rating, Distance): in-progress
+3. Filters (Types of cuisine, <del>Price</del>, Rating, <del>Distance</del>): in-progress
 4. ML
 5. Add retrieval of restaurant information
 
